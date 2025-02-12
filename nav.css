@@ -1,0 +1,27 @@
+.fortune1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    /* Adjust width */
+    height: 100px;
+    /* Adjust height */
+    background-color: midnightblue;
+    /* Background color */
+    color: white;
+    /* Text color */
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 10px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* Remove link underline */
+    transition: 0.3s;
+    /* Smooth hover effect */
+}
+
+.fortune1:hover {
+    background-color: darkblue;
+    /* Darker blue on hover */
+}
