@@ -1,27 +1,98 @@
-.fortune1 {
+body {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    width: 200px;
-    /* Adjust width */
-    height: 100px;
-    /* Adjust height */
-    background-color: midnightblue;
-    /* Background color */
-    color: white;
-    /* Text color */
-    font-size: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    border-radius: 10px;
-    /* Rounded corners */
-    text-decoration: none;
-    /* Remove link underline */
-    transition: 0.3s;
-    /* Smooth hover effect */
+    align-items: center;
+    /* Prevents unwanted vertical scroll */
+    height: 100vh;
+    background-color: white;
 }
 
-.fortune1:hover {
-    background-color: darkblue;
-    /* Darker blue on hover */
+.fortunecontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Ensures all buttons stay in one row */
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    /* Smooth snap scrolling */
+    gap: 20px;
+    /* Space between boxes */
+    padding-left: 20px;
+    /* Prevents first fortune from being cut off */
+}
+
+.fortunebutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 50px;
+    position: relative;
+    background-color: white;
+    color: midnightblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid midnightblue;
+    position: relative;
+    padding: 20px;
+}
+
+.homenavbar {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 1em;
+    color: midnightblue;
+}
+
+/* bluecornerboxes */
+.fortunebutton::before,
+.fortunebutton::after,
+.fortunebutton span::before,
+.fortunebutton span::after {
+    content: "";
+    position: absolute;
+    background-color: midnightblue;
+}
+
+/* topleft */
+.fortunebutton::before {
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+}
+
+/* bottomleft */
+.fortunebutton::after {
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 10px;
+}
+
+/* topright */
+.fortunebutton span::before {
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 20px;
+}
+
+/* bottomright */
+.fortunebutton span::after {
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
 }
