@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 23em;
+    overflow-x: auto;
+    width: 120vw;
+    overflow-y: hidden;
+}
+
+.fortunecookiesaying {
+    font-family: 'Times New Roman', Times, serif;
+    color: midnightblue;
+    font-size: 2.5em;
+}
+
+.flip {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4.6em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .85em;
+    color: midnightblue;
+}
+
+
+.topleftbox {
+    top: 0;
+    left: 0;
+    width: 390px;
+    height: 140px;
+    background: midnightblue;
+    position: absolute
+}
+
+.bottomleftbox {
+    bottom: 0;
+    left: 0;
+    width: 390px;
+    height: 60px;
+    background: midnightblue;
+    position: absolute;
+}
+
+.toprightbox {
+    top: 0;
+    right: -315px;
+    height: 140px;
+    width: 80px;
+    background: midnightblue;
+    position: absolute;
+}
+
+.bottomrightbox {
+    bottom: 0;
+    right: -315px;
+    height: 60px;
+    width: 80px;
+    background: midnightblue;
+    position: absolute;
+}
