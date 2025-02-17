@@ -1,58 +1,42 @@
 body {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Prevents unwanted vertical scroll */
     height: 100vh;
     background-color: white;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .fortunecontainer {
     display: flex;
-    flex-wrap: nowrap;
-    /* Ensures all buttons stay in one row */
-    overflow-x: auto;
-    /* Enables horizontal scrolling */
-    scroll-snap-type: x mandatory;
-    /* Smooth snap scrolling */
+    flex-direction: row;
     gap: 20px;
-    /* Space between boxes */
-    padding-left: 20px;
-    /* Prevents first fortune from being cut off */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: auto;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .fortunebutton {
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    height: 50px;
-    position: relative;
-    background-color: white;
+    width: 550px;
+    height: 150px;
     color: midnightblue;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
+    font-size: 1.4em;
     text-decoration: none;
     text-align: center;
     border: 2px solid midnightblue;
-    position: relative;
     padding: 20px;
-}
-
-.homenavbar {
-    position: absolute;
-    top: 0;
-    left: 30%;
-    transform: translateX(-50%);
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-size: 1em;
-    color: midnightblue;
+    display: flex;
+    flex-shrink: 0;
+    position: relative;
 }
 
 /* bluecornerboxes */
@@ -69,30 +53,45 @@ body {
 .fortunebutton::before {
     top: 0;
     left: 0;
-    width: 40px;
-    height: 20px;
+    width: 65px;
+    height: 35px;
 }
 
 /* bottomleft */
 .fortunebutton::after {
     bottom: 0;
     left: 0;
-    width: 40px;
-    height: 10px;
+    width: 65px;
+    height: 20px;
 }
 
 /* topright */
 .fortunebutton span::before {
     top: 0;
     right: 0;
-    width: 10px;
-    height: 20px;
+    width: 20px;
+    height: 35px;
 }
 
 /* bottomright */
 .fortunebutton span::after {
     bottom: 0;
     right: 0;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.home {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 1.5em;
+    color: midnightblue;
 }

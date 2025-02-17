@@ -3,16 +3,16 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 23em;
+    margin-top: 280px;
     overflow-x: auto;
-    width: 120vw;
+    width: 130vw;
     overflow-y: hidden;
 }
 
 .fortunecookiesaying {
     font-family: 'Times New Roman', Times, serif;
     color: midnightblue;
-    font-size: 2.5em;
+    font-size: 80px;
 }
 
 .flip {
@@ -20,12 +20,31 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 4.6em;
+    top: 730px;
+    left: 726px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: .85em;
+    font-size: 35px;
     color: midnightblue;
+    position: fixed
 }
 
+.home {
+    position: fixed;
+    top: 0;
+    left: 26.5em;
+    text-align: center;
+    font-size: 25px;
+    color: midnightblue
+}
+
+.index {
+    position: fixed;
+    left: 31.5em;
+    top: 0;
+    text-align: center;
+    font-size: 25px;
+    color: midnightblue
+}
 
 .topleftbox {
     top: 0;
@@ -47,7 +66,7 @@ body {
 
 .toprightbox {
     top: 0;
-    right: -315px;
+    right: -500px;
     height: 140px;
     width: 80px;
     background: midnightblue;
@@ -56,9 +75,90 @@ body {
 
 .bottomrightbox {
     bottom: 0;
-    right: -315px;
+    right: -500px;
     height: 60px;
     width: 80px;
     background: midnightblue;
     position: absolute;
+}
+
+@media (max-width: 844px) and (max-height: 390px) {
+
+    body {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 140px;
+        overflow-x: auto;
+        width: 120vw;
+        overflow-y: hidden;
+    }
+
+    .fortunecookiesaying {
+        font-size: 40px;
+    }
+
+    .flip {
+        color: midnightblue;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        position: fixed;
+        top: 360px;
+        left: 535px
+    }
+
+    .topleftbox {
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 80px;
+        background: midnightblue;
+        position: absolute
+    }
+
+    .bottomleftbox {
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        height: 40px;
+        background: midnightblue;
+        position: absolute
+    }
+
+    .toprightbox {
+        top: 0;
+        right: -200px;
+        height: 80px;
+        width: 50px;
+        background: midnightblue;
+        position: absolute;
+    }
+
+    .bottomrightbox {
+        bottom: 0;
+        right: -200px;
+        height: 40px;
+        width: 50px;
+        background: midnightblue;
+        position: absolute;
+    }
+
+    .home {
+        position: fixed;
+        top: 0;
+        left: 23.8em;
+        text-align: center;
+        font-size: 20px;
+        color: midnightblue
+    }
+
+    .index {
+        position: fixed;
+        left: 29em;
+        top: 0;
+        text-align: center;
+        font-size: 20px;
+        color: midnightblue
+    }
 }

@@ -3,14 +3,14 @@
     letter-spacing: normal;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
-    font-size: 6em;
+    font-size: 6.5em;
     color: midnightblue
 }
 
 .indexnavbar {
     position: absolute;
     top: 0;
-    left: 30%;
+    left: 50%;
     transform: translateX(-50%);
     width: 100%;
     text-align: center;
@@ -18,7 +18,7 @@
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.5em;
     color: midnightblue;
 }
 
@@ -63,4 +63,53 @@ body {
     width: 80px;
     background: midnightblue;
     position: absolute;
+}
+
+@media (max-width: 844px) and (max-height: 390px) {
+    .title {
+        font-size: 40px;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 185px;
+    }
+
+    .topleftbox {
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 80px;
+        background: midnightblue;
+        position: absolute
+    }
+
+    .bottomleftbox {
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        height: 40px;
+        background: midnightblue;
+        position: absolute
+    }
+
+    .toprightbox {
+        top: 0;
+        right: 0;
+        height: 80px;
+        width: 50px;
+        background: midnightblue;
+        position: absolute;
+    }
+
+    .bottomrightbox {
+        bottom: 0;
+        right: 0;
+        height: 40px;
+        width: 50px;
+        background: midnightblue;
+        position: absolute;
+    }
 }
