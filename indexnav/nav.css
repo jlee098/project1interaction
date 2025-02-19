@@ -2,7 +2,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: white;
+    background-color: midnightblue;
     margin: 0;
     overflow-x: hidden;
     width: 100%;
@@ -24,6 +24,7 @@ body {
 
 .fortunebutton {
     justify-content: center;
+    background-color: white;
     align-items: center;
     width: 550px;
     height: 150px;
@@ -32,7 +33,7 @@ body {
     font-size: 1.4em;
     text-decoration: none;
     text-align: center;
-    border: 2px solid midnightblue;
+    border: 2px solid white;
     padding: 20px;
     display: flex;
     flex-shrink: 0;
@@ -93,5 +94,5 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-size: 1.5em;
-    color: midnightblue;
+    color: white;
 }

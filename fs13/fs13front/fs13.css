@@ -3,7 +3,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 280px;
+    margin-top: 310px;
     overflow-x: auto;
     width: 130vw;
     overflow-y: hidden;
@@ -12,7 +12,7 @@ body {
 .fortunecookiesaying {
     font-family: 'Times New Roman', Times, serif;
     color: midnightblue;
-    font-size: 80px;
+    font-size: 85px;
 }
 
 .flip {
